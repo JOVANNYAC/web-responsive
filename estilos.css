@@ -1,0 +1,118 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    
+    
+}
+
+
+ .container {
+    min-height: 100vh;
+    text-align: center;
+    font-family: 'Indie Flower', cursive;
+    color: black;
+    background-color: #B7E778;
+    padding: 15px;
+    display: grid; 
+    grid-template-areas: 
+       "header header"
+       "main aside"
+       "footer footer";
+    grid-template-columns: 80% 20%;   
+ }
+
+@media (max-width: 800px) {
+    .container {
+        grid-template-areas:
+        "header header"
+        "main main"
+        "aside aside"
+        "footer footer";
+     grid-template-columns: 70% 30%;    ;
+    }
+}
+
+ .header {
+  grid-area: header;
+  background-color: #40DAB2;
+  border-radius: 20px;
+  margin: 20px;
+ }
+
+ .header nav {
+     background-color:  #B7E778;
+     margin: 10px;
+     border-radius: 20px;
+ }
+
+ .main {
+     grid-area: main;
+     ;
+
+     grid-template-columns: 100%;
+     background-color: #BE6283;
+     border-radius: 20px;
+     margin: 20px;
+ }
+
+
+.main article {
+    background-color:  #40DAB2;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 20px;
+}
+
+.main article section {
+    padding: 10px;
+    background-color:  #B7E778;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+.main-article {
+    display: grid;
+     grid-template-areas: 
+     "section section"
+     "section section"
+    
+}
+
+@media (max-width: 600px) {
+    .main-article {
+        display: grid;
+         grid-template-areas: 
+         "section"
+         "section"
+         "section"
+         "section"
+}
+}
+
+.main .footer-main {
+    background-color:  #B7E778;
+    margin: 10px;
+    border-radius: 20px;
+}
+ .aside {
+     padding: 20px;
+     display: grid;
+     grid-auto-rows: auto;
+     grid-area: aside;
+     background-color: #ED7575;
+     border-radius: 20px;
+     margin: 20px;
+ }
+
+ .aside article {
+     margin: 10px;
+     background-color:  #B7E778;
+     border-radius: 20px;
+ } 
+
+ .footer {
+     grid-area: footer;
+     background-color: #40DAB2;
+     border-radius: 20px;
+     margin: 20px;
+ }
